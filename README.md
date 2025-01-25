@@ -35,7 +35,7 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
-* [ ] New technical terminologies
+* [X] New technical terminologies
 
 ## License
 
