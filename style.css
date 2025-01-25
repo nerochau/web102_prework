@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: 'Cabin';
-    background-color: #758190;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0 20px;
 }
 
 #tentacles {
@@ -10,17 +12,47 @@ body {
 }
 
 .header {
-    display: flex;
     background-color: lightblue;
-    padding: 1%;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+    width: 100%;  /* Makes the header span the full width */
+    box-sizing: border-box; /*make it unafffected*/
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+/* Step 3 of quest 2 */
 .stats-container {
     display: flex;
+    justify-content: space-around; /* Distribute items evenly with space around */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -60,6 +92,7 @@ body {
 .game-card:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
+    transform: scale(1.05);
 }
 
 #button-container {
@@ -73,3 +106,50 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+#button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#button-container button {
+    background-color: lightblue;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button-container button:hover {
+    background-color: #333;
+}
+
+/* Game container */
+#games-container {
+    margin: 20px;
+}
+
+.game {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.game.funded {
+    background-color: #dff0d8;
+}
+
+.game.unfunded {
+    background-color: #f2dede;
+}
+
+.game h3 {
+    margin: 0;
+}
+  
