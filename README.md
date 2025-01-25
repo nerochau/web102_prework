@@ -34,8 +34,7 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
-* [X] New technical terminologies
+This is my first time using Git properly so a lot of new technical terminologies.
 
 ## License
 
